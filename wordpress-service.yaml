@@ -4,9 +4,9 @@ metadata:
   name: wordpress
 spec:
   ports:
-  - port: 31002
+  - port: 31001
    # nodePort: 31001
-    targetPort: http-port-port
+    targetPort: http-port
     protocol: TCP
   selector:
     app: wordpress
