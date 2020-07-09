@@ -9,6 +9,6 @@ spec:
     protocol: TCP
   selector:
     app: wordpress
-
+  #type: NodePort  
 
  
