@@ -4,10 +4,7 @@ metadata:
   name: mysql
 spec:
   ports:
-  - port: 31002
-   # nodePort: 31001
-    targetPort: mysql-port
-    protocol: TCP
+  - port: 3306
   selector:
     app: mysql
-  #type: LoadBalancer
+  
