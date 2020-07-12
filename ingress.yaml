@@ -6,7 +6,7 @@
 #   name: ingress
 # spec:
 #   rules:
-#   - host: wordpress770.example.com
+#   - host: 10.103.253.183.xip.io
 #     http:
 #       paths:
 #       - path: /*
@@ -28,7 +28,7 @@
         name: http
         protocol: HTTP
       hosts:
-      - "*"
+      - 10.103.253.183.xip.io
 ---
   apiVersion: networking.istio.io/v1alpha3
   kind: VirtualService
@@ -36,7 +36,7 @@
     name: wordpress
   spec:
     hosts:
-    - "*"
+    - 10.103.253.183.xip.io
     gateways:
     - wordpress
     http:  
